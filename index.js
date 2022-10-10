@@ -1,0 +1,1 @@
+/*check if password is the same.*/

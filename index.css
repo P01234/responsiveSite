@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    border: 0;
+    overflow:auto;
+    box-sizing:border-box;
+    text-decoration: none;
+    animation: all 2s;
+}
+a{
+    color:white;
+    font-weight:800;
+    animation: spin 3s;
+}
+@keyframes all {
+    from{
+        opacity:0.8;
+    }
+    to{
+        opacity:1;
+    }
+}
+#mainImage{
+    display:flex;
+    position:absolute;
+    justify-content: center;
+    align-items: flex-start;
+    color:antiquewhite;
+    right: 67.5%;
+    width:32.5%;
+    height:100vh;
+    background-image: url(/image/cellPhone.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#imageOpacity{
+    display:flex;
+    justify-content: center;
+    margin: 8px;
+    align-items: center;
+    margin-left:15%;
+    margin-right:15%;
+    padding:10px;
+    width:100%;
+    border-bottom: 1px solid #fff;
+}
+#mainHead{
+    display:block;
+    position: absolute;
+    margin-top: 190px;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: topToBottom 5s ;
+
+}
+#mainHead h1{
+    font-weight: 400;
+}
+
+@keyframes topToBottom {
+    from {margin-top: 0px; color:black}
+    to {margin-top: 190px; color:gainsboro;}
+  }
+#mainHead :hover{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    font-weight: 600;
+    padding:10px;
+    cursor: pointer;
+}
+
+#formImage{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    align-items: center;
+    justify-content:center;
+    align-items: flex-start;
+    width: 67.5%;
+    left:32.5%;
+    height:100vh;
+}
+
+#formImage::after{
+    display:flex;
+    content: "";
+    background: url(/image/formBackground.jpg);
+    background-size:cover;
+    background-position: center;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+#formAreaHeader{
+    position:relative;
+    display:block;
+    text-align:center;
+    margin: 10px;
+    padding:10px;
+}
+#textArea{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 17%;
+    padding:15px;
+    height: fit-content;
+    font-size: 18px;
+}
+#anotherText{
+    display:block;
+    position:absolute;
+    margin:10px;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+    top:35%;
+    font-size: 20px;
+}
+#formSection{
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#formHeader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+#formSection{
+    background-image: url(/image/formArea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    border-top: #fff 0.2px solid;
+    border-bottom: #fff 0.2px solid;
+    color:whitesmoke;
+}
+#formSection form{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:10px;
+    padding: 8px;
+}
+#fieldSet{
+    display:block;
+    padding:8px;
+}
+.input{
+    display:flex;
+    flex-direction:row;
+    justify-content:none;
+    align-items:flex-start;
+    margin:10px;
+    height:fit-content;
+}
+.input{
+    width: 300px;
+    height: 20px;
+    border-radius: 6px;
+    border: #fff solid 1px;
+    box-shadow:0px 3px 1px floralwhite;
+}
+.label{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#signIn{
+    width:150px;
+    padding:2px;
+    height: 35px;
+    color: gold;
+    margin:10px;
+    border: black 2px solid;
+    border-radius: 10px;
+    background-image: url(/image/732549.webp);
+    background-size: cover;
+    background-position: center;
+}
+input[type=button] {
+    width:150px;
+    padding:2px;
+    height: 35px;
+    color: gold;
+    margin:10px;
+    border: black 2px solid;
+    border-radius: 10px;
+    background-image: url(/image/732549.webp);
+    background-size: cover;
+    background-position: center;
+    cursor:pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+input[type=button]:hover{
+    font-size: 20px;
+    font-weight: 700;
+    color:goldenrod;
+}
+@media (max-width: 600px){
+    #mainImage{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position:relative;
+        width:100%;
+        overflow-x: hidden;
+        height:500px;
+        right:0;
+    }
+    #formImage{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        width:100%;
+        height:1180px;
+        margin:0;
+        left:0;
+        overflow-y: hidden;
+    }
+    #formAreaHeader{
+        position:absolute;
+        top:2%;
+        margin:10px;
+    }
+}
